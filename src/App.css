@@ -1,0 +1,141 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat__title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.chat__viewport {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  height: 480px;
+  overflow: auto;
+  background: #fafafa;
+}
+
+.help-panel {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.help-panel__title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.help-item {
+  margin: 6px 0;
+}
+
+.help-item__title {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.help-item__content {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.message {
+  display: flex;
+  margin: 8px 0;
+}
+
+.message--user {
+  justify-content: flex-end;
+}
+
+.message--bot {
+  justify-content: flex-start;
+}
+
+.message__bubble {
+  max-width: 70%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.message--user .message__bubble {
+  background: #2563eb;
+  color: #fff;
+  border-top-right-radius: 4px;
+}
+
+.message--bot .message__bubble {
+  background: #e5e7eb;
+  color: #111827;
+  border-top-left-radius: 4px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.input-row__input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-row__input:disabled {
+  background: #f3f4f6;
+}
+
+.input-row__button {
+  padding: 10px 14px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-row__button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.env-warning {
+  color: #b45309;
+  font-size: 12px;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: 1px solid #d1d5db;
+  background: #fff;
+  color: #111827;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.chip:hover {
+  background: #f3f4f6;
+}
